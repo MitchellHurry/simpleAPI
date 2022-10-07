@@ -3,9 +3,12 @@ package main
 import (
 	"fmt"
 	"net/http"
+	//"github.com/stianeikeland/go-rpio/v4"
 )
 
 func main() {
+
+	// Reference: https://github.com/stianeikeland/go-rpio
 	//https://levelup.gitconnected.com/consuming-a-rest-api-using-golang-b323602ba9d8
 	//fmt.Println("Calling API...")
 
@@ -25,4 +28,5 @@ func main() {
 	}
 
 	defer resp.Body.Close()
+
 }
